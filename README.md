@@ -72,3 +72,11 @@ For information on reporting security vulnerabilities in Jitsi Meet, see [SECURI
 ## Acknowledgements
 
 Jitsi Meet started out as a sample conferencing application using Jitsi Videobridge. It was originally developed by ESTOS' developer Philipp Hancke who then contributed it to the community where development continues with joint forces!
+
+## Deployment procedure
+
+- Check the content of deploy-local.sh
+- Run the command "make" and input your password when necessary
+- SSH manually into the Ubuntu instance. Replace the content inside /usr/share/jitsi-meet with the content of ~/jitsi-meet-deploy using: 
+  - sudo rm -rf /usr/share/jitsi-meet/ && sudo cp -r ~/jitsi-meet-deploy/ /usr/share/jitsi-meet/
+

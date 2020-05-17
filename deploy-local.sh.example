@@ -1,0 +1,25 @@
+rm -rf deploy
+mkdir deploy
+mkdir deploy/css
+mkdir deploy/scripts
+cp -r interface_config.js ./deploy
+cp -r logging_config.js ./deploy
+cp -r *.json	./deploy
+cp -r *.html	./deploy
+cp -r *.ico ./deploy
+cp -r libs	./deploy
+cp -r static ./deploy
+cp -r css/all.css ./deploy/css
+cp -r sounds	./deploy
+cp -r fonts ./deploy
+cp -r images ./deploy
+cp -r lang	./deploy
+cp -r connection_optimization ./deploy
+cp -r resources/robots.txt	./deploy
+cp -r resources/*.sh ./deploy/scripts/
+cp -r prosody-plugins ./deploy
+
+ssh valentin@64.225.93.93 "rm -rf ~/jitsi-meet-deploy"
+scp -r ./deploy valentin@64.225.93.93:~/jitsi-meet-deploy
+
+rm -rf deploy
