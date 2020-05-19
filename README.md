@@ -17,7 +17,7 @@ For other systems, or if you wish to install all components manually, see the [d
 ## Download
 
 | Latest stable release | [![release](https://img.shields.io/badge/release-latest-green.svg)](https://github.com/jitsi/jitsi-meet/releases/latest) |
-|---|---|
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 
 You can download Debian/Ubuntu binaries:
 * [stable](https://download.jitsi.org/stable/) ([instructions](https://jitsi.org/downloads/ubuntu-debian-installations-instructions/))
@@ -79,4 +79,8 @@ Jitsi Meet started out as a sample conferencing application using Jitsi Videobri
 - Run the command "make" and input your password when necessary
 - SSH manually into the Ubuntu instance. Replace the content inside /usr/share/jitsi-meet with the content of ~/jitsi-meet-deploy using: 
   - sudo rm -rf /usr/share/jitsi-meet/ && sudo cp -r ~/jitsi-meet-deploy/ /usr/share/jitsi-meet/
+
+## Editing CSS
+- Run the command "make deploy-css" after each css change to see the changes live while developing'
+
 
