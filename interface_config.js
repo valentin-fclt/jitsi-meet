@@ -16,11 +16,11 @@ var interfaceConfig = {
     TOOLBAR_ALWAYS_VISIBLE: false,
     DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Jitster',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
-    SHOW_JITSI_WATERMARK: true,
+    SHOW_JITSI_WATERMARK: false,
     JITSI_WATERMARK_LINK: 'https://jitsi.org',
 
     // if watermark is disabled by default, it can be shown only for guests
-    SHOW_WATERMARK_FOR_GUESTS: true,
+    SHOW_WATERMARK_FOR_GUESTS: false,
     SHOW_BRAND_WATERMARK: false,
     BRAND_WATERMARK_LINK: '',
     SHOW_POWERED_BY: false,
@@ -48,12 +48,14 @@ var interfaceConfig = {
      */
     TOOLBAR_BUTTONS: [
         'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
-        'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'recording',
+        'fodeviceselection', 'hangup', 'profile', 'chat', 'recording',
         'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
         'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
         'tileview', 'videobackgroundblur', 'download', 'help', 'mute-everyone',
         'e2ee'
     ],
+
+    // !! Removed "Info" !!
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
 
@@ -71,7 +73,7 @@ var interfaceConfig = {
     /**
      * Whether to show thumbnails in filmstrip as a column instead of as a row.
      */
-    VERTICAL_FILMSTRIP: true,
+    VERTICAL_FILMSTRIP: false,
 
     // A html text to be shown to guests on the close page, false disables it
     CLOSE_PAGE_GUEST_HINT: false,

@@ -201,7 +201,7 @@ class Conference extends AbstractConference<Props, *> {
                 onMouseMove = { this._onShowToolbar }>
 
                 <Notice />
-                <Subject />
+                {/* <Subject /> */}
                 <div id = 'videospace'>
                     <LargeVideo />
                     { hideVideoQualityLabel
